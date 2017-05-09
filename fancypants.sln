@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26504.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fancypants.web", "fancypants.web\fancypants.web.csproj", "{373FE095-D1F3-4F7F-A025-15D760C29CCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fancypants.api", "fancypants.api\fancypants.api.csproj", "{A3061F70-5363-4B5E-A8B0-7397DD714166}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{373FE095-D1F3-4F7F-A025-15D760C29CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373FE095-D1F3-4F7F-A025-15D760C29CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373FE095-D1F3-4F7F-A025-15D760C29CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373FE095-D1F3-4F7F-A025-15D760C29CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3061F70-5363-4B5E-A8B0-7397DD714166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3061F70-5363-4B5E-A8B0-7397DD714166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3061F70-5363-4B5E-A8B0-7397DD714166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3061F70-5363-4B5E-A8B0-7397DD714166}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

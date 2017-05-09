@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <h3>Rover: @Model.Manifest.name</h3>
+</div>
+
+<div class="row">
+    <ul>
+        <li>
+            Photos Taken: @Model.Manifest.total_photos
+        </li>
+        <li>
+            Sols on Mars: @Model.Manifest.max_sol
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <h3>Selected Sol: @Model.SelectedSol</h3>
+    <ul>
+        <li>
+            Photos Taken: @Model.Manifest.photos.First(x=>x.sol == Model.SelectedSol).total_photos (Showing @Model.Images.Count)
+        </li>
+        <li>
+            Earth Date: @Model.Images.FirstOrDefault()?.earth_date
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    @foreach (var photo in Model.Images)
+    {
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <a href="@photo.img_src">
+                    <img src="@photo.img_src" class="img-rounded img-responsive" />
+                </a>
+                <div class="caption">
+                    <ul>
+                        <li>Camera: @photo.camera.full_name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>
